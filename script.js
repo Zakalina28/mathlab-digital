@@ -60,6 +60,17 @@ function gambarGrafik() {
       }
     }
   });
+  function cekKuis2() {
+  const jawaban = document.querySelector('input[name="soal2"]:checked');
+  const hasil = document.getElementById("hasilKuis2");
+  if (!jawaban) {
+    hasil.textContent = "Silakan pilih jawaban terlebih dahulu.";
+  } else if (jawaban.value === "14") {
+    hasil.textContent = "Jawaban benar!";
+  } else {
+    hasil.textContent = "Jawaban salah. Coba lagi!";
+  }
+}
 }
   }
 }
