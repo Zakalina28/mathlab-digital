@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MathLab Digital</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
@@ -12,43 +11,38 @@
     <a href="#materi">Materi</a>
     <a href="#simulasi">Simulasi</a>
     <a href="#kuis">Kuis</a>
-  </nav>
+  </nav>  <section id="beranda">
+    <h1 class="fade-in">Selamat Datang di MathLab Digital</h1>
+    <p>Laboratorium Matematika Virtual untuk SMK Teknik.</p>
+  </section>  <section id="materi">
+    <h2>Materi Regresi Linier</h2>
+    <p>Regresi linier adalah suatu metode statistik untuk memodelkan hubungan antara variabel independen (X) dan variabel dependen (Y).</p>
+    <ul>
+      <li>Persamaan umum: y = ax + b</li>
+      <li>a: koefisien regresi (slope), b: konstanta</li>
+    </ul>
+    <p><a href="modul-regresi.pdf" download>Unduh Modul PDF</a></p>
+  </section>  <section id="simulasi">
+    <h2>Simulasi Regresi Linier</h2>
+    <label>Masukkan nilai X (pisahkan dengan koma):</label><br>
+    <input type="text" id="xValues"><br>
+    <label>Masukkan nilai Y (pisahkan dengan koma):</label><br>
+    <input type="text" id="yValues"><br><br>
+    <button onclick="jalankanRegresi()">Jalankan Simulasi</button>
+    <div class="output-box" id="hasilRegresi"></div>
+  </section>  <section id="kuis">
+    <h2>Kuis Interaktif</h2>
+    <p>1. Berapa hasil dari 2 + 2?</p>
+    <input type="number" id="jawaban1">
+    <button onclick="cekJawaban1()">Periksa</button>
+    <p id="hasil1"></p><p>2. Jika y = 3x + 2, maka berapa nilai y jika x = 4?</p>
+<input type="radio" name="soal2" value="12"> 12<br>
+<input type="radio" name="soal2" value="14"> 14<br>
+<input type="radio" name="soal2" value="16"> 16<br>
+<button onclick="cekKuis2()">Periksa Jawaban</button>
+<p id="hasilKuis2"></p>
 
-  <section id="beranda">
-    <h2>Selamat Datang</h2>
-    <p>Platform pembelajaran matematika interaktif untuk SMK Teknik.</p>
-  </section>
+  </section><button onclick="scrollToTop()" class="scroll-top">Kembali ke Atas</button>
 
-  <section id="materi">
-    <h2>Materi</h2>
-    <p>Di sini Anda bisa mempelajari konsep matematika teknik seperti regresi, statistik, dan lainnya.</p>
-  </section>
-
-  <section id="simulasi">
-    <h2>Simulasi</h2>
-    <button onclick="jalankanSimulasi()">Jalankan Simulasi Regresi</button>
-    <div id="outputSimulasi" class="output-box"></div>
-  </section>
-
-  <section id="kuis">
-    <h2>Kuis</h2>
-    <label>Berapa hasil dari 2 + 2?</label>
-    <input type="text" id="jawaban" />
-    <button onclick="cekJawaban()">Periksa</button>
-    <p id="hasilKuis"></p>
-  </section>
-
-  <section id="kuis2">
-  <h2>Kuis Tambahan: Regresi</h2>
-  <p>2. Jika y = 3x + 2, maka berapa nilai y jika x = 4?</p>
-  <input type="radio" name="soal2" value="12"> 12<br>
-  <input type="radio" name="soal2" value="14"> 14<br>
-  <input type="radio" name="soal2" value="16"> 16<br><br>
-
-  <button onclick="cekKuis2()">Periksa Jawaban</button>
-  <p id="hasilKuis2"></p>
-</section>
-
-  <script src="script.js"></script>
-</body>
+  <script src="script.js"></script></body>
 </html>
