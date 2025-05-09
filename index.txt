@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathLab Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MathLab Digital</h1>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#materi">Materi</a>
+      <a href="#simulasi">Simulasi</a>
+      <a href="#kuis">Kuis</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="beranda">
+      <h2>Selamat Datang</h2>
+      <p>Platform pembelajaran matematika interaktif untuk SMK Teknik.</p>
+    </section>
+
+    <section id="materi">
+      <h2>Materi</h2>
+      <p>Di sini Anda bisa mempelajari konsep matematika teknik seperti regresi, statistik, dan lainnya.</p>
+    </section>
+
+    <section id="simulasi">
+      <h2>Simulasi</h2>
+      <button onclick="jalankanSimulasi()">Jalankan Simulasi Regresi</button>
+      <div id="outputSimulasi" class="output-box"></div>
+    </section>
+
+    <section id="kuis">
+      <h2>Kuis</h2>
+      <p>Berikut adalah pertanyaan singkat:</p>
+      <label>Berapa hasil dari 2 + 2?</label>
+      <input type="text" id="jawaban">
+      <button onclick="cekJawaban()">Periksa</button>
+      <p id="hasilKuis"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MathLab Digital - Zakalina N.P.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
