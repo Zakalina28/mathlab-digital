@@ -14,5 +14,16 @@ function cekJawaban() {
   } else {
     hasil.textContent = 'Coba lagi.';
     hasil.style.color = 'red';
+ function cekKuisPG() {
+  const jawaban = document.querySelector('input[name="soal1"]:checked');
+  const hasil = document.getElementById("hasilKuisPG");
+  if (!jawaban) {
+    hasil.textContent = "Silakan pilih jawaban terlebih dahulu.";
+  } else if (jawaban.value === "15") {
+    hasil.textContent = "Jawaban benar!";
+  } else {
+    hasil.textContent = "Jawaban salah. Coba lagi!";
+  }
+}
   }
 }
