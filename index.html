@@ -1,70 +1,42 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MathLab Digital</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>MathLab Digital</h1>
-    <nav>
-      <a href="#beranda">Beranda</a>
-      <a href="#materi">Materi</a>
-      <a href="#simulasi">Simulasi</a>
-      <a href="#kuis">Kuis</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#materi">Materi</a>
+    <a href="#simulasi">Simulasi</a>
+    <a href="#kuis">Kuis</a>
+  </nav>
 
-  <main>
-    <section id="beranda">
-      <h2>Selamat Datang</h2>
-      <p>Platform pembelajaran matematika interaktif untuk SMK Teknik.</p>
-    </section>
+  <section id="beranda">
+    <h2>Selamat Datang</h2>
+    <p>Platform pembelajaran matematika interaktif untuk SMK Teknik.</p>
+  </section>
 
-    <section id="materi">
-      <h2>Materi</h2>
-      <p>Di sini Anda bisa mempelajari konsep matematika teknik seperti regresi, statistik, dan lainnya.</p>
-    </section>
+  <section id="materi">
+    <h2>Materi</h2>
+    <p>Di sini Anda bisa mempelajari konsep matematika teknik seperti regresi, statistik, dan lainnya.</p>
+  </section>
 
-    <section id="simulasi">
-      <h2>Simulasi</h2>
-      <button onclick="jalankanSimulasi()">Jalankan Simulasi Regresi</button>
-      <div id="outputSimulasi" class="output-box"></div>
-    </section>
+  <section id="simulasi">
+    <h2>Simulasi</h2>
+    <button onclick="jalankanSimulasi()">Jalankan Simulasi Regresi</button>
+    <div id="outputSimulasi" class="output-box"></div>
+  </section>
 
-    <section id="grafikRegresi">
-  <h2>Grafik Regresi Linear</h2>
-  <canvas id="chartRegresi" width="400" height="200"></canvas>
-  <button onclick="gambarGrafik()">Tampilkan Grafik</button>
-</section>
-    
-    <section id="kuis">
-      <h2>Kuis</h2>
-      <p>Berikut adalah pertanyaan singkat:</p>
-      <label>Berapa hasil dari 2 + 2?</label>
-      <input type="text" id="jawaban">
-      <button onclick="cekJawaban()">Periksa</button>
-      <p id="hasilKuis"></p>
-    </section>
-  </main>
-
-  <section id="kuisPilihanGanda">
-  <h2>Kuis Pilihan Ganda</h2>
-  <p>1. Hasil dari 5 × 3 adalah ...</p>
-  <input type="radio" name="soal1" value="10"> 10<br>
-  <input type="radio" name="soal1" value="15"> 15<br>
-  <input type="radio" name="soal1" value="20"> 20<br><br>
-
-  <button onclick="cekKuisPG()">Periksa Jawaban</button>
-  <p id="hasilKuisPG"></p>
-</section>
-  
-  <footer>
-    <p>&copy; 2025 MathLab Digital - Zakalina N.P.</p>
-  </footer>
+  <section id="kuis">
+    <h2>Kuis</h2>
+    <label>Berapa hasil dari 2 + 2?</label>
+    <input type="text" id="jawaban" />
+    <button onclick="cekJawaban()">Periksa</button>
+    <p id="hasilKuis"></p>
+  </section>
 
   <script src="script.js"></script>
 </body>
