@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MathLab Digital</title>
@@ -34,6 +35,12 @@
       <div id="outputSimulasi" class="output-box"></div>
     </section>
 
+    <section id="grafikRegresi">
+  <h2>Grafik Regresi Linear</h2>
+  <canvas id="chartRegresi" width="400" height="200"></canvas>
+  <button onclick="gambarGrafik()">Tampilkan Grafik</button>
+</section>
+    
     <section id="kuis">
       <h2>Kuis</h2>
       <p>Berikut adalah pertanyaan singkat:</p>
