@@ -65,8 +65,23 @@
 </section>
 
 <section id="kuis" class="content-section">
-  <h2>Kuis Regresi Linier</h2>
-  <p>(Kuis interaktif akan ditambahkan di tahap berikutnya.)</p>
+  <h2>Kuis Interaktif</h2>
+  <p>Jawablah pertanyaan berikut untuk menguji pemahamanmu tentang regresi linier:</p>
+  <form id="quizForm">
+    <p>1. Apa tujuan dari analisis regresi linier sederhana?</p>
+    <input type="radio" name="q1" value="a"> Mengetahui frekuensi data<br>
+    <input type="radio" name="q1" value="b"> Memprediksi nilai Y dari X<br>
+    <input type="radio" name="q1" value="c"> Menentukan modus data<br>
+
+    <p>2. Jika a = 2 dan b = 3, maka bentuk persamaan regresinya adalah...</p>
+    <input type="radio" name="q2" value="a"> Y = 2X + 3<br>
+    <input type="radio" name="q2" value="b"> Y = 3X + 2<br>
+    <input type="radio" name="q2" value="c"> Y = X + 5<br>
+
+    <br>
+    <button type="button" onclick="cekJawaban()">Kirim Jawaban</button>
+  </form>
+  <div id="hasilKuis" style="margin-top:15px;"></div>
 </section>
 
 <section id="profil" class="content-section">
@@ -79,5 +94,15 @@
 
   </main>  <footer>
     <p>&copy; 2025 Zakalina Natalia Puspitasari - MathLab Digital</p>
-  </footer>  <script src="script.js"></script></body>
+  </footer>  <script src="script.js"></script>  <script>
+    function cekJawaban() {
+      const q1 = document.querySelector('input[name="q1"]:checked');
+      const q2 = document.querySelector('input[name="q2"]:checked');
+      let skor = 0;
+      if (q1 && q1.value === "b") skor++;
+      if (q2 && q2.value === "a") skor++;
+
+      document.getElementById("hasilKuis").innerHTML = `<strong>Skor Anda: ${skor}/2</strong>`;
+    }
+  </script></body>
 </html>
